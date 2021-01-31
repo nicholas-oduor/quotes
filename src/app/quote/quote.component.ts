@@ -8,11 +8,11 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Better your best','Peter', 'Joseph',new Date(2021,1,29)),
-    new Quote(2, 'If people are doubting how far you can go, go so far that you can’t hear them anymore.', ' Michele Ruiz','Joseph',new Date(2019,8,9)), 
-    new Quote(3, 'We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes – understanding that failure is not the opposite of success, it’s part of success.','Arianna Huffington','Joseph',new Date(2020,6,9)),
-    new Quote(4, 'Write it. Shoot it. Publish it. Crochet it, sauté it, whatever. MAKE.','Joss Whedon','Joseph',new Date(2019,6,7)),
-    new Quote(5, 'I wake up every morning and think to myself, ‘how far can I push this company in the next 24 hours.','Leah Busque','Joseph',new Date(2019,10,9)),
+    new Quote(1, 'The way to get started is to quit talking and begin doing','Nickita Nicks', 'Nick',new Date(2021,1,29)),
+    new Quote(5, 'What we think, we become.','Weslet Mayor','Nick',new Date(2021,5,8)),
+    new Quote(3, 'Never regret anything that made you smile.','Brookes Kimberly','Nick',new Date(2020,9,9)),
+    new Quote(4, 'Love For All, Hatred For None.','Pope Francis','Nick',new Date(2020,6,7)),
+    new Quote(5, 'Die with memories, not dreams.','Carmelo Anthony','Nick',new Date(2021,5,8)),
   ];
   upVote(index) {
 
