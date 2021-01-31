@@ -14,22 +14,22 @@ export class QuoteComponent implements OnInit {
     new Quote(4, 'Love For All, Hatred For None.','Pope Francis','Nick',new Date(2020,6,7)),
     new Quote(5, 'Die with memories, not dreams.','Carmelo Anthony','Nick',new Date(2021,5,8)),
   ];
-  upVote(index) {
+  upVote(index: any) {
 
     this.quotes[index].upvote++;
   }
 
-  downVote(index) {
+  downVote(index:any) {
 
     this.quotes[index].downvote++;
   }
-  addNewQuote(quote){
+  addNewQuote(quote: any){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
     quote.date = new Date(quote.date)
     this.quotes.push(quote)
   }
-  toggleDetails(index) {
+  toggleDetails(index: any) {
     this.quotes[index].description = !this.quotes[index].description;
   }
   delete(deleteThis: boolean, index: number) {
